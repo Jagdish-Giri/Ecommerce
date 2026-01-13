@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Ecommerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <div class="logo">E</div>
+                <span>Ecommerce</span>
+            </div>
+            <nav class="nav" aria-label="Primary">
+                <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a class="ghost" href="login.html">Login</a>
+                <button class="primary">Cart</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="page-header">
+                <h1>Our Services</h1>
+                <p>Premium support and services for our customers</p>
+            </section>
+
+            <section class="services">
+                <h2>Why Shop With Us</h2>
+                <div class="service-grid">
+                    <div class="service-card scroll-reveal-scale">
+                        <div class="service-icon">🚚</div>
+                        <h3>Free Shipping</h3>
+                        <p>On all orders over $50 worldwide. Fast and reliable delivery to your doorstep.</p>
+                    </div>
+                    <div class="service-card scroll-reveal-scale">
+                        <div class="service-icon">🔒</div>
+                        <h3>Secure Payment</h3>
+                        <p>100% secure payment processing with industry-standard encryption.</p>
+                    </div>
+                    <div class="service-card scroll-reveal-scale">
+                        <div class="service-icon">↩️</div>
+                        <h3>Easy Returns</h3>
+                        <p>30-day money back guarantee. No questions asked return policy.</p>
+                    </div>
+                    <div class="service-card scroll-reveal-scale">
+                        <div class="service-icon">🎧</div>
+                        <h3>24/7 Support</h3>
+                        <p>Dedicated customer support team ready to help anytime, anywhere.</p>
+                    </div>
+                    <div class="service-card scroll-reveal-scale">
+                        <div class="service-icon">🛡️</div>
+                        <h3>Warranty Protection</h3>
+                        <p>Extended warranty options available on all products.</p>
+                    </div>
+                    <div class="service-card scroll-reveal-scale">
+                        <div class="service-icon">📦</div>
+                        <h3>Gift Wrapping</h3>
+                        <p>Complimentary gift wrapping service for special occasions.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact-cta">
+                <h2>Need Help?</h2>
+                <p>Our support team is here to assist you with any questions</p>
+                <div class="contact-methods">
+                    <div class="contact-card scroll-reveal">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email Us</h3>
+                        <p>support@ecommerce.com</p>
+                    </div>
+                    <div class="contact-card scroll-reveal">
+                        <div class="contact-icon">📞</div>
+                        <h3>Call Us</h3>
+                        <p>+1 (800) 123-4567</p>
+                    </div>
+                    <div class="contact-card scroll-reveal">
+                        <div class="contact-icon">💬</div>
+                        <h3>Live Chat</h3>
+                        <p>Available 24/7</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="brand large">
+                        <div class="logo">E</div>
+                        <span>Ecommerce</span>
+                    </div>
+                    <p>Your destination for premium audio equipment and tech accessories.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ecommerce. All rights reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('active');
+                    }, index * 100);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', open);
+        });
+    </script>
+</body>
+</html>

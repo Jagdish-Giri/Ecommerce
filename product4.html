@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Sphere - Ecommerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <div class="logo">E</div>
+                <span>Ecommerce</span>
+            </div>
+            <nav class="nav" aria-label="Primary">
+                <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#shop">Shop</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a class="ghost" href="#login">Login</a>
+                <button class="primary">Cart</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="product-detail">
+                <a href="index.html#products" class="back-link">← Back to Products</a>
+                
+                <div class="detail-grid">
+                    <div class="detail-images">
+                        <div class="main-image">
+                            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=1000&q=80" alt="Echo Sphere">
+                        </div>
+                        <div class="thumbnail-grid">
+                            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=200&q=80" alt="View 1" class="thumb active">
+                            <img src="https://images.unsplash.com/photo-1518443243-1a7e08d1a3d4?auto=format&fit=crop&w=200&q=80" alt="View 2" class="thumb">
+                            <img src="https://images.unsplash.com/photo-1543512214-318c7553f230?auto=format&fit=crop&w=200&q=80" alt="View 3" class="thumb">
+                        </div>
+                    </div>
+
+                    <div class="detail-info">
+                        <h1>Echo Sphere</h1>
+                        <div class="rating">
+                            <span class="stars">⭐⭐⭐⭐⭐</span>
+                            <span class="review-count">(342 reviews)</span>
+                        </div>
+                        <p class="detail-price">$129.00</p>
+                        <p class="detail-desc">Smart speaker with advanced voice assistant integration. Control your smart home, play music, get weather updates, and more with just your voice.</p>
+                        
+                        <div class="features-list">
+                            <h3>Key Features:</h3>
+                            <ul>
+                                <li>✓ 360° premium sound</li>
+                                <li>✓ Voice assistant built-in</li>
+                                <li>✓ Multi-room audio support</li>
+                                <li>✓ Smart home control hub</li>
+                                <li>✓ Touch controls on top</li>
+                                <li>✓ Compact design</li>
+                            </ul>
+                        </div>
+
+                        <div class="quantity-selector">
+                            <label>Quantity:</label>
+                            <div class="qty-controls">
+                                <button class="qty-btn">-</button>
+                                <input type="number" value="1" min="1" max="10" class="qty-input">
+                                <button class="qty-btn">+</button>
+                            </div>
+                        </div>
+
+                        <div class="action-buttons">
+                            <button class="primary large">Add to Cart</button>
+                            <button class="ghost large">Buy Now</button>
+                        </div>
+
+                        <div class="product-meta">
+                            <p><strong>SKU:</strong> ECH-SPH-BLK</p>
+                            <p><strong>Category:</strong> Smart Speakers</p>
+                            <p><strong>Tags:</strong> Smart Home, Voice Control, WiFi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="detail-tabs">
+                    <div class="tab-buttons">
+                        <button class="tab-btn active" data-tab="specs">Specifications</button>
+                        <button class="tab-btn" data-tab="shipping">Shipping</button>
+                        <button class="tab-btn" data-tab="reviews">Reviews</button>
+                    </div>
+                    <div class="tab-content active" id="specs">
+                        <h3>Technical Specifications</h3>
+                        <table class="specs-table">
+                            <tr><td>Speaker Type</td><td>360° omnidirectional</td></tr>
+                            <tr><td>Connectivity</td><td>WiFi, Bluetooth 5.0</td></tr>
+                            <tr><td>Voice Assistant</td><td>Alexa, Google Assistant</td></tr>
+                            <tr><td>Dimensions</td><td>148mm x 99mm</td></tr>
+                            <tr><td>Weight</td><td>540g</td></tr>
+                            <tr><td>Power</td><td>AC adapter included</td></tr>
+                            <tr><td>Audio Output</td><td>20W stereo</td></tr>
+                        </table>
+                    </div>
+                    <div class="tab-content" id="shipping">
+                        <h3>Shipping Information</h3>
+                        <p>Free shipping on all orders over $50 worldwide. Standard delivery takes 3-5 business days.</p>
+                        <ul>
+                            <li>Free returns within 30 days</li>
+                            <li>Setup guide included</li>
+                            <li>Compatible with major smart home platforms</li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="reviews">
+                        <h3>Customer Reviews</h3>
+                        <div class="review">
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <p><strong>Perfect smart speaker</strong></p>
+                            <p>Easy to set up and sounds great. Voice recognition is excellent.</p>
+                            <span class="review-author">- David K.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', open);
+        });
+
+        const qtyInput = document.querySelector('.qty-input');
+        const qtyBtns = document.querySelectorAll('.qty-btn');
+        qtyBtns[0].addEventListener('click', () => {
+            if (qtyInput.value > 1) qtyInput.value--;
+        });
+        qtyBtns[1].addEventListener('click', () => {
+            if (qtyInput.value < 10) qtyInput.value++;
+        });
+
+        const tabBtns = document.querySelectorAll('.tab-btn');
+        const tabContents = document.querySelectorAll('.tab-content');
+        tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const tab = btn.dataset.tab;
+                tabBtns.forEach(b => b.classList.remove('active'));
+                tabContents.forEach(c => c.classList.remove('active'));
+                btn.classList.add('active');
+                document.getElementById(tab).classList.add('active');
+            });
+        });
+
+        const thumbs = document.querySelectorAll('.thumb');
+        const mainImg = document.querySelector('.main-image img');
+        thumbs.forEach(thumb => {
+            thumb.addEventListener('click', () => {
+                thumbs.forEach(t => t.classList.remove('active'));
+                thumb.classList.add('active');
+                mainImg.src = thumb.src.replace('w=200', 'w=1000');
+            });
+        });
+    </script>
+</body>
+</html>

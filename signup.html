@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Ecommerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <div class="logo">E</div>
+                <span>Ecommerce</span>
+            </div>
+            <nav class="nav" aria-label="Primary">
+                <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a class="ghost" href="login.html">Login</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="auth-container">
+                <div class="auth-box scroll-reveal-scale">
+                    <div class="auth-header">
+                        <h1>Create Account</h1>
+                        <p>Sign up to start shopping with us</p>
+                    </div>
+                    
+                    <form class="auth-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="John Doe" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="your@email.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Create a strong password" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="confirm-password">Confirm Password</label>
+                            <input type="password" id="confirm-password" placeholder="Re-enter password" required>
+                        </div>
+                        
+                        <label class="checkbox">
+                            <input type="checkbox" required>
+                            <span>I agree to the <a href="#" class="link">Terms & Conditions</a></span>
+                        </label>
+                        
+                        <button type="submit" class="primary full-width">Create Account</button>
+                    </form>
+                    
+                    <div class="auth-divider">
+                        <span>Or sign up with</span>
+                    </div>
+                    
+                    <div class="social-login">
+                        <button class="social-btn">
+                            <span>🔵</span> Google
+                        </button>
+                        <button class="social-btn">
+                            <span>📘</span> Facebook
+                        </button>
+                    </div>
+                    
+                    <div class="auth-footer">
+                        <p>Already have an account? <a href="login.html" class="link">Login</a></p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('active');
+                    }, index * 100);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', open);
+        });
+    </script>
+</body>
+</html>

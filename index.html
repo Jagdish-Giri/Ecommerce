@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <div class="logo">E</div>
+                <span>Ecommerce</span>
+            </div>
+            <nav class="nav" aria-label="Primary">
+                <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="services.html">Services</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a class="ghost" href="login.html">Login</a>
+                <button class="primary">Cart</button>
+            </div>
+        </header>
+
+        <main>
+            <section class="hero" id="home">
+                <div class="hero-inner">
+                    <div class="hero-copy">
+                        <p class="pill">New Drop • Wireless</p>
+                        <h1>Hear every detail. Feel every beat.</h1>
+                        <p class="lead">Pro ANC headphones with spatial audio, 42-hour battery, and ultra-soft memory foam cushions.</p>
+                        <div class="hero-actions">
+                            <button class="primary">Shop now</button>
+                            <button class="ghost">View specs</button>
+                        </div>
+                        <div class="meta">
+                            <span>Free shipping</span>
+                            <span>30-day trial</span>
+                            <span>24/7 support</span>
+                        </div>
+                    </div>
+
+                    <div class="hero-carousel" aria-label="Featured products">
+                        <div class="slides">
+                            <article class="slide active" data-index="0">
+                                <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1000&q=80" alt="Red wireless headphones">
+                                <div class="badge">Beats Solo Air</div>
+                            </article>
+                            <article class="slide" data-index="1">
+                                <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=1000&q=80" alt="Black studio headphones">
+                                <div class="badge">Studio Pro Max</div>
+                            </article>
+                            <article class="slide" data-index="2">
+                                <img src="https://images.unsplash.com/photo-1505740106531-4243f3831c78?auto=format&fit=crop&w=1000&q=80" alt="Wireless earbuds">
+                                <div class="badge">Feather Lite Pods</div>
+                            </article>
+                        </div>
+                        <div class="slider-controls">
+                            <button class="slider-btn prev" aria-label="Previous slide">&#10094;</button>
+                            <div class="dots" role="tablist" aria-label="Select featured product">
+                                <button class="dot active" data-index="0" aria-label="Slide 1"></button>
+                                <button class="dot" data-index="1" aria-label="Slide 2"></button>
+                                <button class="dot" data-index="2" aria-label="Slide 3"></button>
+                            </div>
+                            <button class="slider-btn next" aria-label="Next slide">&#10095;</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="categories" id="shop" aria-label="Shop by category">
+                <h2>Shop by Category</h2>
+                <div class="category-grid">
+                    <a href="#headphones" class="category-card scroll-reveal-scale">
+                        <div class="category-icon">🎧</div>
+                        <h3>Headphones</h3>
+                        <p>Premium wireless & wired</p>
+                    </a>
+                    <a href="#speakers" class="category-card scroll-reveal-scale">
+                        <div class="category-icon">🔊</div>
+                        <h3>Speakers</h3>
+                        <p>Portable & home audio</p>
+                    </a>
+                    <a href="#earbuds" class="category-card scroll-reveal-scale">
+                        <div class="category-icon">🎵</div>
+                        <h3>Earbuds</h3>
+                        <p>True wireless freedom</p>
+                    </a>
+                    <a href="#watches" class="category-card scroll-reveal-scale">
+                        <div class="category-icon">⌚</div>
+                        <h3>Smartwatches</h3>
+                        <p>Health & fitness tracking</p>
+                    </a>
+                    <a href="#gaming" class="category-card scroll-reveal-scale">
+                        <div class="category-icon">🎮</div>
+                        <h3>Gaming</h3>
+                        <p>Consoles & accessories</p>
+                    </a>
+                    <a href="#accessories" class="category-card scroll-reveal-scale">
+                        <div class="category-icon">🔌</div>
+                        <h3>Accessories</h3>
+                        <p>Cables, cases & more</p>
+                    </a>
+                </div>
+            </section>
+
+            <section class="promo-banner scroll-reveal-scale">
+                <div class="promo-content">
+                    <div class="promo-badge">Limited Time</div>
+                    <h2>Winter Sale</h2>
+                    <p>Up to 40% off on selected items. Free shipping worldwide.</p>
+                    <button class="primary">Shop Sale</button>
+                </div>
+            </section>
+
+            <section class="products" id="products">
+                <div class="section-header">
+                    <h2>Featured Products</h2>
+                    <p class="lead">Discover our handpicked selection of premium audio gear</p>
+                </div>
+                <div class="product-grid">
+                    <a href="product1.html" class="product-card scroll-reveal">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&q=80" alt="Wireless headphones">
+                            <span class="badge-new">New</span>
+                        </div>
+                        <div class="product-info">
+                            <h3>Beats Solo Air</h3>
+                            <p>Active noise cancelling wireless headphones</p>
+                            <div class="product-footer">
+                                <span class="price">$299</span>
+                                <button class="btn-add">View Details</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="product2.html" class="product-card scroll-reveal">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1511367461989-f85a21fda167?auto=format&fit=crop&w=600&q=80" alt="Studio headphones">
+                        </div>
+                        <div class="product-info">
+                            <h3>Studio Pro Max</h3>
+                            <p>Professional over-ear studio monitors</p>
+                            <div class="product-footer">
+                                <span class="price">$449</span>
+                                <button class="btn-add">View Details</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="product3.html" class="product-card scroll-reveal">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1505740106531-4243f3831c78?auto=format&fit=crop&w=600&q=80" alt="Wireless earbuds">
+                        </div>
+                        <div class="product-info">
+                            <h3>Feather Lite Pods</h3>
+                            <p>True wireless earbuds with spatial audio</p>
+                            <div class="product-footer">
+                                <span class="price">$179</span>
+                                <button class="btn-add">View Details</button>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="product4.html" class="product-card scroll-reveal">
+                        <div class="product-img">
+                            <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df?auto=format&fit=crop&w=600&q=80" alt="Smart speaker">
+                        </div>
+                        <div class="product-info">
+                            <h3>Echo Sphere</h3>
+                            <p>Smart speaker with voice assistant</p>
+                            <div class="product-footer">
+                                <span class="price">$129</span>
+                                <button class="btn-add">View Details</button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <section class="testimonials">
+                <h2>What Our Customers Say</h2>
+                <div class="testimonial-grid">
+                    <div class="testimonial-card scroll-reveal">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Amazing sound quality! The noise cancellation is perfect for my daily commute."</p>
+                        <div class="author">
+                            <strong>Sarah Johnson</strong>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card scroll-reveal">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Fast delivery and excellent customer service. Highly recommend this store!"</p>
+                        <div class="author">
+                            <strong>Mike Chen</strong>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-card scroll-reveal">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
+                        <p>"Best investment for my home studio. Crystal clear audio and comfortable fit."</p>
+                        <div class="author">
+                            <strong>Alex Rivera</strong>
+                            <span>Verified Buyer</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="services" id="services">
+                <h2>Why Shop With Us</h2>
+                <div class="service-grid">
+                    <div class="service-card scroll-reveal-scale">
+                        <div class="service-icon">🚚</div>
+                        <h3>Free Shipping</h3>
+                        <p>On all orders over $50 worldwide</p>
+                    </div>
+                    <div class="service-card scroll-reveal-scale">
+                        <div class="service-icon">🔒</div>
+                        <h3>Secure Payment</h3>
+                        <p>100% secure payment processing</p>
+                    </div>
+                    <div class="service-card scroll-reveal-scale">
+                        <div class="service-icon">↩️</div>
+                        <h3>Easy Returns</h3>
+                        <p>30-day money back guarantee</p>
+                    </div>
+                    <div class="service-card scroll-reveal-scale">
+                        <div class="service-icon">🎧</div>
+                        <h3>24/7 Support</h3>
+                        <p>Dedicated customer support team</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about" id="about">
+                <div class="about-content">
+                    <div class="about-text scroll-reveal-left">
+                        <p class="eyebrow">About Us</p>
+                        <h2>Passion for Premium Audio</h2>
+                        <p>Since 2020, we've been curating the finest audio equipment for audiophiles and music lovers worldwide. Our mission is to deliver exceptional sound experiences through carefully selected products from the world's leading brands.</p>
+                        <p>From wireless headphones to professional studio gear, every product in our collection is tested and verified to meet the highest standards of quality and performance.</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <strong>50K+</strong>
+                                <span>Happy Customers</span>
+                            </div>
+                            <div class="stat">
+                                <strong>500+</strong>
+                                <span>Products</span>
+                            </div>
+                            <div class="stat">
+                                <strong>30+</strong>
+                                <span>Brands</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-img scroll-reveal-right">
+                        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=800&q=80" alt="Audio equipment">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="contact">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="brand large">
+                        <div class="logo">E</div>
+                        <span>Ecommerce</span>
+                    </div>
+                    <p>Your destination for premium audio equipment and tech accessories.</p>
+                    <div class="social">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="Twitter">🐦</a>
+                        <a href="#" aria-label="YouTube">📺</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#shop">Shop</a>
+                    <a href="#products">Products</a>
+                    <a href="#about">About</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <a href="#services">Services</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Shipping</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p>Subscribe for exclusive deals and updates</p>
+                    <form class="newsletter">
+                        <input type="email" placeholder="Your email" required>
+                        <button type="submit" class="primary">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ecommerce. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.15,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('active');
+                    }, index * 100);
+                }
+            });
+        }, observerOptions);
+
+        // Observe all scroll-reveal elements
+        document.querySelectorAll('.scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', open);
+        });
+
+        const slides = Array.from(document.querySelectorAll('.slide'));
+        const dots = Array.from(document.querySelectorAll('.dot'));
+        const prevBtn = document.querySelector('.slider-btn.prev');
+        const nextBtn = document.querySelector('.slider-btn.next');
+        let slideIndex = 0;
+
+        function showSlide(index) {
+            slideIndex = (index + slides.length) % slides.length;
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === slideIndex);
+            });
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === slideIndex);
+                dot.setAttribute('aria-selected', i === slideIndex);
+            });
+        }
+
+        prevBtn.addEventListener('click', () => showSlide(slideIndex - 1));
+        nextBtn.addEventListener('click', () => showSlide(slideIndex + 1));
+        dots.forEach(dot => dot.addEventListener('click', () => showSlide(Number(dot.dataset.index))));
+
+        // Optional auto-play
+        setInterval(() => showSlide(slideIndex + 1), 7000);
+    </script>
+</body>
+</html>
