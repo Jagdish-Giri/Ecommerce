@@ -5,8 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ecommerce</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel='stylesheet' href='animations.css'>
 </head>
 <body>
+    <!-- PRELOADER -->
+    <div class='preloader'>
+        <div class='preloader-content'>
+            <div class='loader-ring'>
+                <div class='loader-ring-inner'></div>
+            </div>
+            <div class='loader-logo'>
+                <div class='logo-pulse'>E</div>
+            </div>
+            <p class='loader-text'>Loading<span class='dots'></span></p>
+        </div>
+    </div>
+
+
     <div class="page-shell">
         <header class="topbar">
             <div class="brand">
@@ -372,5 +387,19 @@
         // Optional auto-play
         setInterval(() => showSlide(slideIndex + 1), 7000);
     </script>
+    <script src='enhanced-animations.js'></script>
 </body>
 </html>
+<!-- PRELOADER -->
+<div class='preloader'>
+    <div class='preloader-content'>
+        <div class='loader-ring'>
+            <div class='loader-ring-inner'></div>
+        </div>
+        <div class='loader-logo'>
+            <div class='logo-pulse'>E</div>
+        </div>
+        <p class='loader-text'>Loading<span class='dots'></span></p>
+    </div>
+</div>
+
