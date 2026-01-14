@@ -82,7 +82,7 @@ eccomerce website/
 {
   "Organization": {
     "name": "Ecommerce Audio Store",
-    "url": "https://ecommerce-example.com",
+    "url": "https://giri-ecommerce.netlify.app",
     "contactPoint": "support@ecommerce.com",
     "socialMedia": ["Facebook", "Instagram", "LinkedIn", "GitHub"]
   },
