@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Page not found. Return to our premium audio equipment store.">
+    <title>404 - Page Not Found | Ecommerce Audio Store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel='stylesheet' href='animations.css'>
+    <style>
+        .error-section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 80vh;
+            text-align: center;
+            padding: 40px 20px;
+        }
+        .error-container {
+            max-width: 600px;
+        }
+        .error-code {
+            font-size: 120px;
+            font-weight: bold;
+            color: #ef4444;
+            margin: 0;
+            line-height: 1;
+        }
+        .error-title {
+            font-size: 32px;
+            color: #1a1a1a;
+            margin: 20px 0;
+        }
+        .error-message {
+            font-size: 18px;
+            color: #666;
+            margin: 20px 0 40px;
+            line-height: 1.6;
+        }
+        .error-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .error-icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="page-shell">
+        <header class="topbar">
+            <div class="brand">
+                <div class="logo">E</div>
+                <span>Ecommerce</span>
+            </div>
+            <nav class="nav" aria-label="Primary">
+                <button class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                    <span></span><span></span><span></span>
+                </button>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a class="ghost" href="login.html">Login</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="error-section">
+                <div class="error-container scroll-reveal">
+                    <div class="error-icon">🔍</div>
+                    <h1 class="error-code">404</h1>
+                    <h2 class="error-title">Oops! Page Not Found</h2>
+                    <p class="error-message">
+                        The page you're looking for has moved or doesn't exist. 
+                        Don't worry, we've got plenty of premium audio equipment waiting for you!
+                    </p>
+                    <div class="error-actions">
+                        <a href="index.html" class="primary">Back to Home</a>
+                        <a href="shop.html" class="ghost">Continue Shopping</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer" id="contact">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="brand large">
+                        <div class="logo">E</div>
+                        <span>Ecommerce</span>
+                    </div>
+                    <p>Your destination for premium audio equipment and tech accessories.</p>
+                    <div class="social">
+                        <a href="https://www.facebook.com/profile.php?id=61586335445178" target="_blank" aria-label="Facebook">📘</a>
+                        <a href="https://www.instagram.com/developergirishgiri/" target="_blank" aria-label="Instagram">📷</a>
+                        <a href="https://www.linkedin.com/in/girish-giri-569b453a4/" target="_blank" aria-label="LinkedIn">🔗</a>
+                        <a href="https://github.com/Jagdish-Giri" target="_blank" aria-label="GitHub">🐙</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <a href="index.html">Home</a>
+                    <a href="shop.html">Shop</a>
+                    <a href="about.html">About</a>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <a href="faq.html">FAQ</a>
+                    <a href="shipping.html">Shipping Info</a>
+                    <a href="mailto:support@ecommerce.com">Contact Us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Ecommerce. All rights reserved. | Made by <a href="https://github.com/Jagdish-Giri" target="_blank" style="color: #ff6b6b; text-decoration: none; font-weight: bold;">developer Girish Giri</a></p>
+                <div class="footer-links"><a href="privacy-policy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src='enhanced-animations.js'></script>
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+        navToggle.addEventListener('click', () => {
+            const open = navLinks.classList.toggle('open');
+            navToggle.setAttribute('aria-expanded', open);
+        });
+    </script>
+</body>
+</html>

@@ -1,4 +1,19 @@
-// ========== PARALLAX EFFECT ==========
+// ========== GOOGLE ANALYTICS ==========
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-YOUR-ANALYTICS-ID');
+
+// ========== PERFORMANCE MONITORING ==========
+if (window.performance && window.performance.timing) {
+    window.addEventListener('load', function() {
+        const perfData = window.performance.timing;
+        const pageLoadTime = perfData.loadEventEnd - perfData.navigationStart;
+        console.log('📊 Page Load Time:', pageLoadTime + 'ms');
+    });
+}
+
+// ========== PARALLAX EFFECT ===========
 document.addEventListener('mousemove', (e) => {
     const parallaxElements = document.querySelectorAll('.parallax');
     parallaxElements.forEach(el => {
