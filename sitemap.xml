@@ -50,6 +50,22 @@
         <priority>0.7</priority>
     </url>
     
+    <!-- Portfolio -->
+    <url>
+        <loc>https://ecommerce-example.com/portfolio.html</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.85</priority>
+    </url>
+    
+    <!-- developergirishgiri Brand Page -->
+    <url>
+        <loc>https://ecommerce-example.com/developergirishgiri.html</loc>
+        <lastmod>2026-01-14</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+    </url>
+    
     <!-- Services -->
     <url>
         <loc>https://ecommerce-example.com/services.html</loc>
