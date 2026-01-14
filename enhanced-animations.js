@@ -1,14 +1,3 @@
-// ========== PRELOADER ==========
-window.addEventListener('load', () => {
-    const preloader = document.querySelector('.preloader');
-    setTimeout(() => {
-        preloader.classList.add('fade-out');
-        setTimeout(() => {
-            preloader.style.display = 'none';
-        }, 600);
-    }, 1500); // 1.5 seconds delay
-});
-
 // ========== PARALLAX EFFECT ==========
 document.addEventListener('mousemove', (e) => {
     const parallaxElements = document.querySelectorAll('.parallax');
@@ -32,6 +21,25 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 top: targetPosition,
                 behavior: 'smooth'
             });
+        }
+    });
+});
+
+// ========== HERO BUTTONS ==========
+const heroActionButtons = document.querySelectorAll('.hero-actions button');
+heroActionButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        if (this.textContent.includes('Shop')) {
+            window.location.href = 'shop.html';
+        } else if (this.textContent.includes('specs')) {
+            // Scroll to products section
+            const productsSection = document.querySelector('#products');
+            if (productsSection) {
+                productsSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            } else {
+                // Fallback to shop page if products section not found
+                window.location.href = 'shop.html#products';
+            }
         }
     });
 });
@@ -225,3 +233,6 @@ document.querySelectorAll('a, button').forEach(el => {
 });
 
 console.log('🚀 All animations loaded successfully!');
+
+
+
