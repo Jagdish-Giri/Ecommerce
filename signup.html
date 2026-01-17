@@ -117,6 +117,19 @@
             const open = navLinks.classList.toggle('open');
             navToggle.setAttribute('aria-expanded', open);
         });
+
+        // Signup form submit alert
+        document.querySelector('.auth-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Feature is coming soon!');
+        });
+
+        // Social signup alerts
+        document.querySelectorAll('.social-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                alert('Feature is coming soon!');
+            });
+        });
     </script>
 </body>
 </html>
