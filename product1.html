@@ -150,10 +150,17 @@
         const qtyInput = document.querySelector('.qty-input');
         const qtyBtns = document.querySelectorAll('.qty-btn');
         qtyBtns[0].addEventListener('click', () => {
-            if (qtyInput.value > 1) qtyInput.value--;
+            let value = parseInt(qtyInput.value);
+            if (value > 1) qtyInput.value = value - 1;
         });
         qtyBtns[1].addEventListener('click', () => {
-            if (qtyInput.value < 10) qtyInput.value++;
+            let value = parseInt(qtyInput.value);
+            if (value < 10) qtyInput.value = value + 1;
+        });
+
+        // Add to Cart alert
+        document.querySelector('.primary.large').addEventListener('click', () => {
+            alert('Feature is coming soon!');
         });
 
         // Tab functionality
